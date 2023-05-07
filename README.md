@@ -1,1 +1,2 @@
-# mediation_garden
+# An idiotproof -but not foolproof- way of turning Blood Volume Pulse to Heart Rate
+(manily because I only skimmed through the figures of: https://www.researchgate.net/figure/Heart-rate-is-derived-from-measures-of-blood-volume-pulse-by-measuring-the-interbeat_fig3_259560204)
