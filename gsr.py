@@ -10,13 +10,9 @@ def get_gsr_summary(df):
     summary = summary.rename(columns = {'GSR': 'mean_GSR'})
     return summary
 
-if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print('Wrong usage; try $ python gsr.py <path_to_file>')
-        exit()
+def main(path_to_file):
 
     print('reading file...')
-    path_to_file = sys.argv[1]
     df = read_data(path_to_file)
 
     print("processing file...")
@@ -25,3 +21,13 @@ if __name__ == "__main__":
     print("writing file...")
     filename, ext = path_to_file.split('.')
     summary.to_csv(f"{filename}_summary_gsr.{ext}")
+
+    return summary
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print('Wrong usage; try $ python gsr.py <path_to_file>')
+        exit()
+    path_to_file = sys.argv[1]
+    main(path_to_file)
