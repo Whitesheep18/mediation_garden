@@ -1,0 +1,1 @@
+MannwhitneyuResult(statistic=31.0, pvalue=0.18065268065268064)
